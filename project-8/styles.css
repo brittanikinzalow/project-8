@@ -16,14 +16,13 @@ body {
 }
 
 .modal {
-    width: 375px;
+    width: 280px;
     margin: 15% auto auto;
     position: relative;
     text-align: center;
     background: #fff;
     border: 1px solid #dfdfdf;
     border-radius: 10px;
-    padding: 20px 35px;
 }
 
 .modal-close {
@@ -40,16 +39,18 @@ body {
 }
 
 .header {
-    font-size: 18px;
+    font-size: 15px;
     margin: 40px 0 25px 0;
+    text-align: center;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: 20px;
     column-gap: 25px;
+    margin: 0 10px;
     
 }
 
@@ -84,7 +85,7 @@ body {
 /* pop up card  */
 .avatar-2{
     border-radius: 150px;
-    height: 150px;
+    height: 125px;
     width: auto;
     margin: 10px;
 }
@@ -97,7 +98,7 @@ body {
 .email-2, .phone, .birthday {
     color: #979c9f;
     font-size: medium;
-    margin: 10px;
+    margin: 20px;
 }
 
 .phone {
@@ -120,4 +121,81 @@ hr {
     border-color: rgba(124, 123, 123, 0.3);
     border-style: solid none none;
     border-width: 2px;
+    width: 85%;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .email, .address {
+        font-size: 15px;
+    }
+    .modal {
+        width: 375px;
+        margin: 15% auto auto;
+        position: relative;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #dfdfdf;
+        border-radius: 10px;
+    }
+
+    .text-container-2 {
+        padding-bottom: 25px;
+    }
+
+    .avatar-2 {
+        margin-top: 30px;
+    } 
+
+    .header{
+        text-align: left;
+        margin-left: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .header{
+        text-align: left;
+        margin-left: 14px;
+    }
+    
+    .name, .email, .address {
+        font-size: small;
+    }
+
+    .avatar {
+        border-radius: 150px;
+        height: 90px;
+        width: auto;
+        margin: 22px 0 0 19px;
+    }
+
+    .text-container {
+        margin-left: 15px;
+    }
+
+    .modal {
+        width: 375px;
+        margin: 15% auto auto;
+        position: relative;
+        text-align: center;
+        background: #fff;
+        border: 1px solid #dfdfdf;
+        border-radius: 10px;
+    }
+
+    .text-container-2 {
+        padding-bottom: 25px;
+    }
+
+    .avatar-2 {
+        margin-top: 30px;
+    }
 }
